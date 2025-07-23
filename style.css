@@ -1,0 +1,22 @@
+/* universal selector start*/
+* {
+  margin: o;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* universal selector close*/
+/* common styles start */
+.container {
+  max-width: 1140px;
+}
+.intr {
+  font-family: "Inter", sans-serif;
+}
+.noto-serif {
+  font-family: "Noto Serif", serif;
+}
+/* common styles close */
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
