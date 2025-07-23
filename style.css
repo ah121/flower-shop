@@ -1,13 +1,23 @@
 /* universal selector start*/
 * {
-  margin: o;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* universal selector close*/
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /* common styles start */
 .container {
   max-width: 1140px;
+}
+.full-width {
+  max-width: 1440px;
+}
+.flex {
+  display: flex;
 }
 .intr {
   font-family: "Inter", sans-serif;
@@ -15,8 +25,94 @@
 .noto-serif {
   font-family: "Noto Serif", serif;
 }
+.mb {
+  margin-bottom: 120px;
+}
 /* common styles close */
-body {
-  max-width: 1440px;
-  margin: 0 auto;
+
+/* header part style start */
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 3.125rem;
+}
+.menu-bar ul li {
+  padding: 20px 0;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #8987a1;
+}
+#first-child,
+#last-child {
+  color: #252432;
+  font-weight: 500;
+}
+/* header part style close */
+/* banner part start */
+.banner-part {
+  height: 461px;
+  align-items: end;
+}
+.banner-info {
+  max-width: 570px;
+}
+.banner-info h1 {
+  font-size: 4.0625rem;
+  color: #e95a08;
+}
+.banner-info p {
+  font-size: 1.375rem;
+  color: #000000;
+  opacity: 50%;
+}
+.banner-info h1 span {
+  color: #000000;
+}
+.banner-img img {
+  display: block;
+}
+/* banner part close */
+/* banner card part start */
+.banner-card-info h1 {
+  font-size: 3.125rem;
+  text-align: center;
+}
+.banner-card-info span {
+  color: #e95a08;
+}
+.banner-card-info p {
+  text-align: center;
+  font-size: 1.375rem;
+  color: #000000;
+  opacity: 50%;
+  padding: 15px 127px 0 127px;
+}
+/* banner card part close */
+/* responsive style for mobile */
+@media (width <576px) {
+  .menu-bar ul li:nth-child(-n + 3) {
+    display: none;
+  }
+  .banner-part {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .banner-info {
+    width: 100%;
+    padding: 30px 15px 0 15px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-info h1 {
+    font-size: 1.5rem;
+  }
+  .banner-info p {
+    font-size: 14px;
+  }
 }
