@@ -28,6 +28,12 @@ body {
 .mb {
   margin-bottom: 120px;
 }
+.f-22 {
+  font-size: 1.375rem;
+}
+.center {
+  text-align: center;
+}
 /* common styles close */
 
 /* header part style start */
@@ -92,6 +98,30 @@ nav {
   opacity: 50%;
   padding: 15px 127px 0 127px;
 }
+.card-wrapper {
+  margin-top: 50px;
+}
+.full-card {
+  font-weight: bold;
+  width: 270px;
+}
+.full-card h1 {
+  margin: 13px 0 15px 0;
+  font-weight: 500;
+}
+.full-card input {
+  padding: 17px 89.7px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+}
 /* banner card part close */
 /* responsive style for mobile */
 @media (width <576px) {
@@ -101,6 +131,7 @@ nav {
   .banner-part {
     flex-direction: column-reverse;
     height: auto;
+    margin-bottom: 60px;
   }
   .banner-info {
     width: 100%;
@@ -114,5 +145,36 @@ nav {
   }
   .banner-info p {
     font-size: 14px;
+  }
+  .banner-card-info h1 {
+    font-size: 1.5rem;
+  }
+  .banner-card-info p {
+    font-size: 0.875rem;
+    padding: 0;
+  }
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    padding: 10px;
+  }
+  .full-card {
+    width: 170px;
+  }
+  .full-card img {
+    width: 170px;
+    height: 196px;
+  }
+  .full-card h1 {
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+  }
+  .full-card h3 {
+    font-size: 1rem;
+  }
+  .full-card input {
+    padding: 15px 40px;
+    margin-top: 15px;
   }
 }
