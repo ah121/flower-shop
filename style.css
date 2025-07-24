@@ -28,6 +28,9 @@ body {
 .mb {
   margin-bottom: 120px;
 }
+.pt {
+  padding-top: 120px;
+}
 .f-22 {
   font-size: 1.375rem;
 }
@@ -123,8 +126,39 @@ nav {
   row-gap: 30px;
 }
 /* banner card part close */
+/* plant lover section start */
+.plant-lover {
+  gap: 70px;
+}
+.plant-lover-img {
+  position: relative;
+}
+#sticker {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: 65%;
+  top: -21%;
+}
+.plant-lover-info {
+  padding: 36px 0;
+}
+.plant-lover-info ul {
+  margin-left: 41px;
+}
+.plant-lover-info h1 {
+  font-size: 3.125rem;
+}
+.plant-lover-info ul li {
+  padding-top: 30px;
+  opacity: 50%;
+}
+/* plant lover section close */
 /* responsive style for mobile */
 @media (width <576px) {
+  header {
+    padding: 10px;
+  }
   .menu-bar ul li:nth-child(-n + 3) {
     display: none;
   }
@@ -132,6 +166,7 @@ nav {
     flex-direction: column-reverse;
     height: auto;
     margin-bottom: 60px;
+    padding: 10px;
   }
   .banner-info {
     width: 100%;
@@ -146,6 +181,11 @@ nav {
   .banner-info p {
     font-size: 14px;
   }
+  .banner-card {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
   .banner-card-info h1 {
     font-size: 1.5rem;
   }
@@ -157,7 +197,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
-    padding: 10px;
   }
   .full-card {
     width: 170px;
@@ -176,5 +215,31 @@ nav {
   .full-card input {
     padding: 15px 40px;
     margin-top: 15px;
+  }
+  #sticker {
+    display: none;
+  }
+  .plant-lover {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .plant-lover-info h1 {
+    font-size: 1.5rem;
+  }
+  .plant-lover-img img {
+    width: 100%;
+  }
+  .plant-lover-info {
+    padding: 0;
+  }
+  .plant-lover-info ul {
+    font-size: 0.875rem;
+  }
+  .plant-lover-info ul li {
+    padding-top: 10px;
+  }
+  .plant-lover {
+    padding-top: 0;
+    gap: 10px;
   }
 }
