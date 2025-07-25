@@ -25,9 +25,6 @@ body {
 .noto-serif {
   font-family: "Noto Serif", serif;
 }
-.mb {
-  margin-bottom: 120px;
-}
 .pt {
   padding-top: 120px;
 }
@@ -36,6 +33,9 @@ body {
 }
 .center {
   text-align: center;
+}
+.auto {
+  margin: 0 auto;
 }
 /* common styles close */
 
@@ -66,6 +66,7 @@ nav {
 .banner-part {
   height: 461px;
   align-items: end;
+  margin-bottom: 120px;
 }
 .banner-info {
   max-width: 570px;
@@ -87,6 +88,9 @@ nav {
 }
 /* banner part close */
 /* banner card part start */
+.banner-card {
+  margin-bottom: 120px;
+}
 .banner-card-info h1 {
   font-size: 3.125rem;
   text-align: center;
@@ -129,6 +133,7 @@ nav {
 /* plant lover section start */
 .plant-lover {
   gap: 70px;
+  margin-bottom: 120px;
 }
 .plant-lover-img {
   position: relative;
@@ -154,12 +159,18 @@ nav {
   opacity: 50%;
 }
 /* plant lover section close */
+/* deal section start */
+.deal {
+  margin-bottom: 120px;
+}
+/* deal section close */
 /* offer section start */
 .offer-wrapper {
   display: grid;
   grid-template-columns: 367px 753px;
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  margin-bottom: 120px;
 }
 .image-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -360,6 +371,7 @@ footer {
   }
   .deal {
     padding: 10px;
+    margin-bottom: 30px;
   }
   .offer-wrapper {
     display: grid;
@@ -367,6 +379,7 @@ footer {
     grid-template-rows: repeat(1, 1fr);
     gap: 10px;
     padding: 10px;
+    margin-bottom: 30px;
   }
   .image-container3 {
     order: 3;
