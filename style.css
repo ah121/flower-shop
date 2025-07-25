@@ -154,6 +154,60 @@ nav {
   opacity: 50%;
 }
 /* plant lover section close */
+/* offer section start */
+.offer-wrapper {
+  display: grid;
+  grid-template-columns: 367px 753px;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+.image-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/deal-bloom.png);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.offer-info {
+  padding: 65px 47px 50px 50px;
+}
+.offer-info1 {
+  padding: 65px 47px 50px 50px;
+}
+.offer-info h3 {
+  font-size: 1.25rem;
+  color: white;
+}
+.offer-info1 h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+.offer-info1 a {
+  font-size: 1.75rem;
+  color: white;
+  display: block;
+  padding: 5px 50px;
+}
+.offer-info a {
+  font-size: 1.25rem;
+  color: white;
+  display: block;
+  padding: 15px 50px;
+}
+.image-container2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/deal-ana.png);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.image-container3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/deal-zabo.png);
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  grid-row: span 2 / span 2;
+  align-content: center;
+}
+/* offer section close */
 /* responsive style for mobile */
 @media (width <576px) {
   header {
@@ -241,5 +295,25 @@ nav {
   .plant-lover {
     padding-top: 0;
     gap: 10px;
+    margin-bottom: 50px;
+  }
+  .deal {
+    padding: 10px;
+  }
+  .offer-wrapper {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .image-container3 {
+    order: 3;
+  }
+  .offer-info1 h3 {
+    font-size: 1.25rem;
+  }
+  .offer-info1 a {
+    font-size: 1.25rem;
   }
 }
