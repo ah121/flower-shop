@@ -277,8 +277,6 @@ footer {
   justify-content: space-around;
   padding: 62px 0;
 }
-.footer-icon ul li {
-}
 /* footer section close */
 /* responsive style for mobile */
 @media (width <576px) {
